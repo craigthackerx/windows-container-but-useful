@@ -26,9 +26,9 @@ What's includes:
 - `wget`
 - `which`
 
-How to use:
+#How to use:
 
-Make a Dockerfile and add your SSH key into the container as well as the authorized key file:
+##Make a Dockerfile and add your SSH key into the container as well as the authorized key file:
 
 ```
 FROM craigtho/windows-but-useful:latest
@@ -36,5 +36,14 @@ FROM craigtho/windows-but-useful:latest
 ADD id_rsa.pub C:\Users\ContainerAdministrator\.ssh\id_rsa.pub
 ADD authorized_keys C:\Users\ContainerAdministration\.ssh\authorized_keys
 ```
+Then:
+```
+docker run -it --rm -m=8GB --cpus=4 -p 1222:22/tcp craigtho/windows-container-but-useful:latest
+```
+#Use Docker-compose.yml
+
+```docker-compose up```
+
+This will build the Dockerfile inside the example folder
 
 See the example folder for pointers
