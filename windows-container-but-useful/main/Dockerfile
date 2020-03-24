@@ -30,4 +30,6 @@ RUN Enable-PSRemoting
 
 EXPOSE 1222/tcp 55985/tcp 55986/tcp
 
-ENTRYPOINT [ "powershell" ]
+RUN net USER user "password" /ADD ; net localgroup "Administrators" "user" /ADD
+
+CMD [ "powershell", "-NoExit", "-Command", "Start-Service sshd" ]

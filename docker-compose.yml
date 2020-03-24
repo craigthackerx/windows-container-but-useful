@@ -10,6 +10,6 @@ services:
     restart: unless-stopped
     stdin_open: true
     ports:
-      - "1222:22/tcp" #Expose SSH to a non-standard port
-      - "55985":5985/tcp" #PSRemoting HTTP Port
+      - "1222:22/tcp" #Expose SSH to a non-standard
+      - "55985:5985/tcp" #PSRemoting HTTP Port
       - "55986:5986/tcp" #PSRemoting HTTPS Port
