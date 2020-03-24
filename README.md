@@ -40,6 +40,12 @@ Then:
 ```
 docker run -it --rm -m=8GB --cpus=4 -p 1222:22/tcp craigtho/windows-container-but-useful:latest
 ```
+ And then:
+`Username=user`
+`Password=password`
+
+ ```ssh -p 1222 user@127.0.0.1```
+
 #Use Docker-compose.yml
 
 ```docker-compose up```
