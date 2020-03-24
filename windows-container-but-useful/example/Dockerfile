@@ -2,7 +2,7 @@
 FROM craigtho/windows-container-but-useful:latest
 
 MAINTAINER "craigthackerx@gmail.com"
-MAINTAINER "im@darren.lol"
+MAINTAINER "humanitarian@hotmail.co.uk"
 
 #Use Powershell
 SHELL ["powershell", "-Command"]

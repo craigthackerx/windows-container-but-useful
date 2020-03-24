@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/windows:1909
 
 #The people to pester when it breaks
 MAINTAINER "craigthackerx@gmail.com"
-MAINTAINER "im@darren.lol"
+MAINTAINER "humanitarian@hotmail.co.uk"
 
 #Use Powershell
 SHELL ["powershell", "-Command"]
