@@ -22,7 +22,7 @@ ADD first-prepare-ssh.ps1 'C:\first-prepare-ssh.ps1'
 ADD second-ssh-regedit.ps1 'C:\second-ssh-regedit.ps1'
 
 RUN C:\.\first-prepare-ssh.ps1
-RUN C:\.\second-ssh-regedit.ps1
+#RUN C:\.\second-ssh-regedit.ps1
 RUN Remove-Item -Force C:\first-prepare-ssh.ps1 ; Remove-Item -Force C:\second-ssh-regedit.ps1
 RUN .$HOME\scoop\apps\win32-openssh\current\FixHostFilePermissions.ps1 -Confirm:$false ; .$HOME\scoop\apps\win32-openssh\current\FixUserFilePermissions.ps1 -Confirm:$false
 
