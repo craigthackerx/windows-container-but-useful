@@ -60,3 +60,6 @@ And then:
 ```ssh -p 1222 user@127.0.0.1```
 
 See the example folder on GitHub for Pointers.
+
+
+You can also find a docker-compose.yml for a version of Portainer for Windows.
